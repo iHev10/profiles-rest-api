@@ -1,3 +1,32 @@
 {
-    "python.analysis.autoImportCompletions": true
-}
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": false,
+    "python.languageServer": "Pylance",
+    "window.zoomLevel": 0,
+    "auto-close-tag.enableAutoCloseTag": true,
+    "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (Eex)"
+    ],
+    "files.associations": {
+      "**/views/**/*.html": "django-html",
+      "*.tpl": "django-html"
+    },
+    "emmet.includeLanguages": {"django-html": "html"}   
+  }
