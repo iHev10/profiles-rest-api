@@ -4,9 +4,15 @@ from . import views
 
 
 router = DefaultRouter()
-router.register("hello-viewset",
-                viewset=views.HelloViewSet,
-                basename="hello-viewset")
+router.register(
+    "hello-viewset",
+    viewset=views.HelloViewSet,
+    basename="hello-viewset"
+)
+router.register(
+    "userprofile",
+    viewset=views.UserProfileViewSet
+)
 
 urlpatterns = [
     path("hello-view", view=views.HelloApiView.as_view(), name="hello-api"),
